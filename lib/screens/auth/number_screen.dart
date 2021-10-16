@@ -75,73 +75,69 @@ class _NumberScreenState extends State<NumberScreen> {
           ),
           Positioned(
             top: 235,
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 24.95, right: 24.95),
-                  child: SizedBox(
-                    height: 30.h,
-                    child: Row(
-                      children: [
-                        DropdownButton<String>(
-                          value: dropdownValue,
-                          icon: const Icon(Icons.arrow_downward),
-                          iconSize: 24,
-                          elevation: 16,
-                          underline: Container(
-                            height: 0,
-                            width: MediaQuery.of(context).size.width.w,
-                            color: Colors.grey,
-                          ),
-                          onChanged: (String? newValue) {
-                            setState(() {
-                              dropdownValue = newValue!;
-                            });
-                          },
-                          items: <String>[
-                            '+1',
-                            '+33',
-                            '+34',
-                            '+36',
-                            '+212',
-                            '+213',
-                            '+214'
-                          ].map<DropdownMenuItem<String>>((String value) {
-                            return DropdownMenuItem<String>(
-                              value: value,
-                              child: Text(
-                                value,
-                                style: TextStyle(
-                                  color: Color(0xff181725),
-                                  fontSize: 17,
-                                ),
-                              ),
-                            );
-                          }).toList(),
-                        ),
-                        SizedBox(
-                          width: 10.w,
-                        ),
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width.w * 0.6,
-                          child: TextFormField(
-                            maxLines: 1,
-                            keyboardType: TextInputType.phone,
-                            decoration: InputDecoration(
-                              hintText: 'Phone number',
+            child: Padding(
+              padding: const EdgeInsets.only(left: 24.95, right: 24.95),
+              child: SizedBox(
+                height: 30.h,
+                child: Row(
+                  children: [
+                    DropdownButton<String>(
+                      value: dropdownValue,
+                      icon: const Icon(Icons.arrow_downward),
+                      iconSize: 24,
+                      elevation: 16,
+                      underline: Container(
+                        height: 0,
+                        width: MediaQuery.of(context).size.width.w,
+                        color: Colors.grey,
+                      ),
+                      onChanged: (String? newValue) {
+                        setState(() {
+                          dropdownValue = newValue!;
+                        });
+                      },
+                      items: <String>[
+                        '+1',
+                        '+33',
+                        '+34',
+                        '+36',
+                        '+212',
+                        '+213',
+                        '+214'
+                      ].map<DropdownMenuItem<String>>((String value) {
+                        return DropdownMenuItem<String>(
+                          value: value,
+                          child: Text(
+                            value,
+                            style: TextStyle(
+                              color: Color(0xff181725),
+                              fontSize: 17,
                             ),
-                            onChanged: (value) {
-                              setState(() {
-                                phoneNumber.text = value;
-                              });
-                            },
                           ),
-                        ),
-                      ],
+                        );
+                      }).toList(),
                     ),
-                  ),
+                    SizedBox(
+                      width: 10.w,
+                    ),
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width.w * 0.6,
+                      child: TextFormField(
+                        maxLines: 1,
+                        keyboardType: TextInputType.phone,
+                        decoration: InputDecoration(
+                          hintText: 'Phone number',
+                        ),
+                        onChanged: (value) {
+                          setState(() {
+                            phoneNumber.text = value;
+                          });
+                        },
+                      ),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
           ),
         ],

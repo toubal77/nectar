@@ -73,38 +73,34 @@ class _VerificationScreenState extends State<VerificationScreen> {
           ),
           Positioned(
             top: 235,
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 24.95, right: 24.95),
-                  child: SizedBox(
-                    height: 30.h,
-                    child: SizedBox(
-                      width: MediaQuery.of(context).size.width.w * 0.6,
-                      child: TextFormField(
-                        maxLines: 1,
-                        keyboardType: TextInputType.phone,
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Color(0xff181725),
-                        ),
-                        decoration: InputDecoration(
-                          hintText: '- - - -',
-                          hintStyle: TextStyle(
-                            fontSize: 18,
-                            color: Color(0xff181725),
-                          ),
-                        ),
-                        onChanged: (value) {
-                          setState(() {
-                            codeVerification.text = value;
-                          });
-                        },
+            child: Padding(
+              padding: const EdgeInsets.only(left: 24.95, right: 24.95),
+              child: SizedBox(
+                height: 30.h,
+                child: SizedBox(
+                  width: MediaQuery.of(context).size.width.w * 0.6,
+                  child: TextFormField(
+                    maxLines: 1,
+                    keyboardType: TextInputType.phone,
+                    style: TextStyle(
+                      fontSize: 18,
+                      color: Color(0xff181725),
+                    ),
+                    decoration: InputDecoration(
+                      hintText: '- - - -',
+                      hintStyle: TextStyle(
+                        fontSize: 18,
+                        color: Color(0xff181725),
                       ),
                     ),
+                    onChanged: (value) {
+                      setState(() {
+                        codeVerification.text = value;
+                      });
+                    },
                   ),
                 ),
-              ],
+              ),
             ),
           ),
         ],
