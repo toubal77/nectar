@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:nectar/screens/auth/singin_screen.dart';
+import 'package:nectar/screens/auth/singin_screen_choose.dart';
 
 class OnBordingScreen extends StatelessWidget {
   const OnBordingScreen({Key? key}) : super(key: key);
@@ -81,7 +81,7 @@ class OnBordingScreen extends StatelessWidget {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return const SingInScreen();
+                            return const SingInScreenChoose();
                           },
                         ),
                       );

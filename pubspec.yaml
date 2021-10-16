@@ -64,6 +64,8 @@ flutter:
     - assets/images/8140 1.png
     - assets/images/Mask Group.png
     - assets/icons/carotte.png
+    - assets/icons/google.png
+    - assets/icons/fb.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
