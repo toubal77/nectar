@@ -2,6 +2,9 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nectar/screens/auth/verification_screen.dart';
+import 'package:nectar/screens/auth/widgets/background_image.dart';
+import 'package:nectar/screens/auth/widgets/text_contains_enter.dart';
+import 'package:nectar/screens/auth/widgets/text_enter.dart';
 
 class NumberScreen extends StatefulWidget {
   const NumberScreen({Key? key}) : super(key: key);
@@ -33,46 +36,9 @@ class _NumberScreenState extends State<NumberScreen> {
       body: Stack(
         alignment: Alignment.centerLeft,
         children: [
-          Container(
-            width: 414.6.w,
-            height: 233.1.h,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                  'assets/images/Rectangle 17.png',
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            child: Container(
-              width: 308.w,
-              height: 29.h,
-              margin: const EdgeInsets.only(left: 25.07, top: 65.19),
-              child: Text(
-                'Enter your mobile number',
-                style: TextStyle(
-                  color: Color(0xff181725),
-                  fontWeight: FontWeight.w600,
-                  fontSize: 26,
-                ),
-              ),
-            ),
-          ),
-          Positioned(
-            top: 205,
-            child: Padding(
-              padding: const EdgeInsets.only(left: 24.95),
-              child: Text(
-                'Mobile Number',
-                style: TextStyle(
-                  color: Color(0xff7C7C7C),
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ),
-          ),
+          BackgroundImage(),
+          TextEnter(text: 'Enter your mobile number'),
+          TextContainsEnter(text: 'Mobile Number'),
           Positioned(
             top: 235,
             child: Padding(
