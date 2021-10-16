@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nectar/screens/auth/location.dart';
+import 'package:nectar/screens/auth/login_screen.dart';
 import 'package:nectar/screens/auth/widgets/background_image.dart';
 
 class SignupScreen extends StatefulWidget {
@@ -13,6 +14,7 @@ class SignupScreen extends StatefulWidget {
 class _SignupScreenState extends State<SignupScreen> {
   bool pswVisible = false;
   TextEditingController emailController = TextEditingController();
+  TextEditingController usernameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: 82.w,
+                    width: 93.w,
                     height: 29.h,
                     child: Text(
                       'Sign Up',
@@ -62,10 +64,10 @@ class _SignupScreenState extends State<SignupScreen> {
                     height: 15,
                   ),
                   SizedBox(
-                    width: 233.w,
+                    width: 247.w,
                     height: 15.h,
                     child: Text(
-                      'Enter your emails and password',
+                      'Enter your credentials to continue',
                       style: TextStyle(
                         color: Color(0xff7C7C7C),
                         fontSize: 16,
@@ -75,6 +77,40 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                   const SizedBox(
                     height: 40,
+                  ),
+                  SizedBox(
+                    width: 233.w,
+                    height: 15.h,
+                    child: Text(
+                      'Username',
+                      style: TextStyle(
+                        color: Color(0xff7C7C7C),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    child: TextFormField(
+                      maxLines: 1,
+                      controller: usernameController,
+                      keyboardType: TextInputType.name,
+                      style: TextStyle(
+                        color: Color(0xff181725),
+                        fontSize: 18,
+                      ),
+                      decoration: InputDecoration(
+                        hintText: 'Toubal Zine-eddine',
+                      ),
+                      onChanged: (value) {
+                        setState(() {
+                          usernameController.text = value;
+                        });
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30,
                   ),
                   SizedBox(
                     width: 233.w,
@@ -153,17 +189,29 @@ class _SignupScreenState extends State<SignupScreen> {
                     ),
                   ),
                   const SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   Container(
-                    alignment: Alignment.topRight,
-                    height: 14.h,
-                    child: Text(
-                      'Forgot Password?',
-                      style: TextStyle(
-                        color: Color(0xff181725),
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
+                    alignment: Alignment.topLeft,
+                    height: 28.97.h,
+                    child: RichText(
+                      text: TextSpan(
+                        text: "By continuing you agree to our ",
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xff7C7C7C),
+                          letterSpacing: 0.05,
+                        ),
+                        children: <TextSpan>[
+                          TextSpan(
+                            text: 'Terms of Service and Privacy Policy',
+                            style: TextStyle(
+                              fontSize: 14,
+                              color: Color(0xff53B175),
+                              letterSpacing: 0.05,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -172,13 +220,13 @@ class _SignupScreenState extends State<SignupScreen> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return const SelectLocation();
+                            return const SelectLocation(arrow: false);
                           },
                         ),
                       );
                     },
                     child: Container(
-                      margin: const EdgeInsets.only(top: 30),
+                      margin: const EdgeInsets.only(top: 8),
                       width: 364.w,
                       height: 67.h,
                       decoration: BoxDecoration(
@@ -187,7 +235,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                       child: Center(
                         child: Text(
-                          'Log In',
+                          'Sing Up',
                           style: TextStyle(
                             color: Color(0xffFFF9FF),
                             fontSize: 18,
@@ -198,29 +246,40 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                     ),
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(top: 25),
-                    alignment: Alignment.center,
-                    child: RichText(
-                      text: TextSpan(
-                        text: "Don't have an account? ",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                          color: Color(0xff181725),
-                          letterSpacing: 0.05,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(
+                          builder: (context) {
+                            return const LoginScreen();
+                          },
                         ),
-                        children: <TextSpan>[
-                          TextSpan(
-                            text: 'Singup',
-                            style: TextStyle(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w600,
-                              color: Color(0xff53B175),
-                              letterSpacing: 0.05,
-                            ),
+                      );
+                    },
+                    child: Container(
+                      margin: const EdgeInsets.only(top: 25),
+                      alignment: Alignment.center,
+                      child: RichText(
+                        text: TextSpan(
+                          text: "Already have an account? ",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                            color: Color(0xff181725),
+                            letterSpacing: 0.05,
                           ),
-                        ],
+                          children: <TextSpan>[
+                            TextSpan(
+                              text: 'Singin',
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xff53B175),
+                                letterSpacing: 0.05,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

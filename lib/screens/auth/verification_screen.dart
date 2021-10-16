@@ -112,7 +112,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
             Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) {
-                  return const SelectLocation();
+                  return const SelectLocation(arrow: true);
                 },
               ),
             );

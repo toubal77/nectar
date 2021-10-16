@@ -7,8 +7,8 @@ import 'package:nectar/screens/home_screen.dart';
 import 'package:nectar/screens/auth/widgets/background_image.dart';
 
 class SelectLocation extends StatefulWidget {
-  const SelectLocation({Key? key}) : super(key: key);
-
+  final bool arrow;
+  const SelectLocation({Key? key, required this.arrow}) : super(key: key);
   @override
   State<SelectLocation> createState() => _SelectLocationState();
 }
@@ -57,15 +57,17 @@ class _SelectLocationState extends State<SelectLocation> {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Color(0x44FFFEFE),
-        leading: IconButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-          icon: Platform.isIOS
-              ? Icon(Icons.arrow_back_ios)
-              : Icon(Icons.arrow_back),
-          color: Color(0xff181725),
-        ),
+        leading: widget.arrow
+            ? IconButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                icon: Platform.isIOS
+                    ? Icon(Icons.arrow_back_ios)
+                    : Icon(Icons.arrow_back),
+                color: Color(0xff181725),
+              )
+            : null,
         elevation: 0,
       ),
       body: Stack(

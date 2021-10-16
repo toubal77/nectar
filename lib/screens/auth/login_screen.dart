@@ -173,7 +173,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.of(context).pushReplacement(
                         MaterialPageRoute(
                           builder: (context) {
-                            return const SelectLocation();
+                            return const SelectLocation(arrow: false);
                           },
                         ),
                       );

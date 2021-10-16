@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nectar/screens/auth/login_screen.dart';
 import 'package:nectar/screens/auth/number_screen.dart';
+import 'package:nectar/screens/auth/signup_screen.dart';
 import 'package:nectar/screens/auth/widgets/buttom_media.dart';
 
 class SingInScreenChoose extends StatelessWidget {
@@ -119,7 +120,7 @@ class SingInScreenChoose extends StatelessWidget {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (context) {
-                      return LoginScreen();
+                      return SignupScreen();
                     },
                   ),
                 );
