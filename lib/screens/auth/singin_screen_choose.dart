@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nectar/screens/auth/login_screen.dart';
 import 'package:nectar/screens/auth/number_screen.dart';
 import 'package:nectar/screens/auth/widgets/buttom_media.dart';
 
@@ -97,6 +98,15 @@ class SingInScreenChoose extends StatelessWidget {
               height: 37.8,
             ),
             ButtomMedia(
+              press: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginScreen();
+                    },
+                  ),
+                );
+              },
               color: Color(0xff5383EC),
               iconName: 'google',
               text: 'Google',
@@ -105,6 +115,15 @@ class SingInScreenChoose extends StatelessWidget {
               height: 20,
             ),
             ButtomMedia(
+              press: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginScreen();
+                    },
+                  ),
+                );
+              },
               color: Color(0xff4A66AC),
               iconName: 'fb',
               text: 'Facebook',

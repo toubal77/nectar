@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:geocode/geocode.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:nectar/screens/auth/home_screen.dart';
+import 'package:nectar/screens/home_screen.dart';
 import 'package:nectar/screens/auth/widgets/background_image.dart';
 
 class SelectLocation extends StatefulWidget {
