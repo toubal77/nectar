@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
+import 'package:nectar/screens/auth/location.dart';
 
 class VerificationScreen extends StatefulWidget {
   const VerificationScreen({Key? key}) : super(key: key);
@@ -111,7 +112,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
             Navigator.of(context).push(
               MaterialPageRoute(
                 builder: (context) {
-                  return const VerificationScreen();
+                  return const SelectLocation();
                 },
               ),
             );
