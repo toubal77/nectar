@@ -37,7 +37,7 @@ class SingInScreenChoose extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.of(context).pushReplacement(
+                Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) {
                       return const NumberScreen();
