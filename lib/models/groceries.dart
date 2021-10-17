@@ -48,7 +48,7 @@ class AllGrocies {
   List<Groceries> allGrocies = [
     Groceries(
       name: 'Beef Bone',
-      image: 'assets/images/Groceries/Beef Bone.png',
+      image: 'assets/images/groceries/Beef Bone.png',
       details:
           'Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet.',
       detailSale: '1kg, Priceg',
@@ -62,7 +62,7 @@ class AllGrocies {
     ),
     Groceries(
       name: 'Broiler Chicken',
-      image: 'assets/images/Groceries/Broiler Chicken.png',
+      image: 'assets/images/groceries/Broiler Chicken.png',
       details:
           'Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet.',
       detailSale: '1kg, Priceg',
@@ -76,7 +76,7 @@ class AllGrocies {
     ),
     Groceries(
       name: 'Beef Bone',
-      image: 'assets/images/Groceries/Beef Bone.png',
+      image: 'assets/images/groceries/Beef Bone.png',
       details:
           'Apples are nutritious. Apples may be good for weight loss. apples may be good for your heart. As part of a healtful and varied diet.',
       detailSale: '1kg, Priceg',
