@@ -3,11 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nectar/models/best_selling.dart';
 import 'package:nectar/models/fruits.dart';
 import 'package:nectar/models/groceries.dart';
-import 'package:nectar/screens/home_screen/widgets/best_selling.dart';
+import 'package:nectar/screens/home_screen/widgets/product_item.dart';
 import 'package:nectar/screens/home_screen/widgets/categories_groceries.dart';
-import 'package:nectar/screens/home_screen/widgets/exclusive_offer.dart';
-import 'package:nectar/screens/home_screen/widgets/groceries_item.dart';
-import 'package:nectar/screens/home_screen/widgets/header_actualite.dart';
+import 'package:nectar/screens/home_screen/widgets/header_offers.dart';
 import 'package:nectar/screens/home_screen/widgets/header_home_screen.dart';
 import 'package:nectar/screens/home_screen/widgets/images_slider.dart';
 import 'package:nectar/screens/home_screen/widgets/search_home_screen.dart';
@@ -38,8 +36,8 @@ class HomeScreen extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemCount: AllFruits().allFruits.length,
                     itemBuilder: (context, index) {
-                      return ExclusiveOffer(
-                        fruit: AllFruits().allFruits[index],
+                      return ProductItem(
+                        item: AllFruits().allFruits[index],
                       );
                     },
                   ),
@@ -53,8 +51,8 @@ class HomeScreen extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemCount: AllBestSelling().allBestSelling.length,
                     itemBuilder: (context, index) {
-                      return BestSellingg(
-                        best: AllBestSelling().allBestSelling[index],
+                      return ProductItem(
+                        item: AllBestSelling().allBestSelling[index],
                       );
                     },
                   ),
@@ -82,8 +80,8 @@ class HomeScreen extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemCount: AllGrocies().allGrocies.length,
                     itemBuilder: (context, index) {
-                      return GroceriesItem(
-                        gros: AllGrocies().allGrocies[index],
+                      return ProductItem(
+                        item: AllGrocies().allGrocies[index],
                       );
                     },
                   ),

@@ -4,7 +4,7 @@ import 'package:geocode/geocode.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nectar/screens/auth/widgets/background_image.dart';
-import 'package:nectar/screens/home_screen/home_widget.dart';
+import 'package:nectar/home_widget.dart';
 
 class SelectLocation extends StatefulWidget {
   final bool arrow;
