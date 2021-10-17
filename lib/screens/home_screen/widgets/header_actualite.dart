@@ -14,7 +14,7 @@ class HeaderActualite extends StatelessWidget {
             title,
             style: TextStyle(
               color: Color(0xff181725),
-              fontSize: 24,
+              fontSize: title == 'Best Seling' ? 27 : 24,
               fontWeight: FontWeight.w600,
             ),
           ),

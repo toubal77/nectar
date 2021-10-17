@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nectar/models/best_selling.dart';
 import 'package:nectar/models/fruits.dart';
+import 'package:nectar/screens/home_screen/widgets/best_selling.dart';
 import 'package:nectar/screens/home_screen/widgets/exclusive_offer.dart';
 import 'package:nectar/screens/home_screen/widgets/header_actualite.dart';
 import 'package:nectar/screens/home_screen/widgets/header_home_screen.dart';
@@ -35,6 +37,21 @@ class HomeScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return ExclusiveOffer(
                         fruit: AllFruits().allFruits[index],
+                      );
+                    },
+                  ),
+                ),
+                HeaderActualite(title: 'Best Seling'),
+                SizedBox(
+                  height: 248.51.h,
+                  width: MediaQuery.of(context).size.width.w,
+                  child: ListView.builder(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    itemCount: AllBestSelling().allBestSelling.length,
+                    itemBuilder: (context, index) {
+                      return BestSellingg(
+                        best: AllBestSelling().allBestSelling[index],
                       );
                     },
                   ),
