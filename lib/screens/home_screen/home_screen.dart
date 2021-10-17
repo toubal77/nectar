@@ -6,6 +6,7 @@ import 'package:nectar/models/groceries.dart';
 import 'package:nectar/screens/home_screen/widgets/best_selling.dart';
 import 'package:nectar/screens/home_screen/widgets/categories_groceries.dart';
 import 'package:nectar/screens/home_screen/widgets/exclusive_offer.dart';
+import 'package:nectar/screens/home_screen/widgets/groceries_item.dart';
 import 'package:nectar/screens/home_screen/widgets/header_actualite.dart';
 import 'package:nectar/screens/home_screen/widgets/header_home_screen.dart';
 import 'package:nectar/screens/home_screen/widgets/images_slider.dart';
@@ -69,6 +70,20 @@ class HomeScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return CategoriesGroceries(
                         categ: AllCategories().allCategories[index],
+                      );
+                    },
+                  ),
+                ),
+                SizedBox(
+                  height: 248.51.h,
+                  width: MediaQuery.of(context).size.width.w,
+                  child: ListView.builder(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    itemCount: AllGrocies().allGrocies.length,
+                    itemBuilder: (context, index) {
+                      return GroceriesItem(
+                        gros: AllGrocies().allGrocies[index],
                       );
                     },
                   ),
