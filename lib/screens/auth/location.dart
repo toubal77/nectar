@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:geocode/geocode.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:nectar/screens/home_screen.dart';
 import 'package:nectar/screens/auth/widgets/background_image.dart';
+import 'package:nectar/screens/home_screen/home_widget.dart';
 
 class SelectLocation extends StatefulWidget {
   final bool arrow;
@@ -146,7 +146,7 @@ class _SelectLocationState extends State<SelectLocation> {
                                   Navigator.of(context).pushReplacement(
                                     MaterialPageRoute(
                                       builder: (context) {
-                                        return const HomeScreen();
+                                        return const HomeWidget();
                                       },
                                     ),
                                   );
