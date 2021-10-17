@@ -49,6 +49,7 @@ dev_dependencies:
   flutter_screenutil: ^5.0.0+2
   geolocator: ^7.3.0
   geocode: ^1.0.1
+  carousel_slider: ^4.0.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -67,10 +68,15 @@ flutter:
     - assets/images/Mask Group.png
     - assets/images/Rectangle 17.png
     - assets/images/illustration.png
+    - assets/images/Mask Group2.png
+    - assets/images/carousel image.jpg
+    - assets/images/carousel image 2.jpg
+    - assets/images/carousel image 3.jpg
     - assets/icons/carotte_color.png
     - assets/icons/carotte.png
     - assets/icons/google.png
     - assets/icons/fb.png
+    - assets/icons/Exclude.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
