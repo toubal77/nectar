@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                     },
                   ),
                 ),
-                HeaderActualite(title: 'Best Seling'),
+                HeaderActualite(title: 'Best Selling'),
                 SizedBox(
                   height: 248.51.h,
                   width: MediaQuery.of(context).size.width.w,
