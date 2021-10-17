@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nectar/screens/exolore/explore_screen.dart';
 import 'package:nectar/screens/home_screen/home_screen.dart';
 
 class HomeWidget extends StatefulWidget {
@@ -15,7 +16,7 @@ class _HomeWidgetState extends State<HomeWidget> {
   Widget build(BuildContext context) {
     List<Widget> widgetsOptions = [
       HomeScreen(),
-      HomeScreen(),
+      ExploreScreen(),
       HomeScreen(),
       HomeScreen(),
       HomeScreen(),
