@@ -29,7 +29,7 @@ class ExploreDetails extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 44.h,
+            height: 43.3.h,
             width: 93.w,
             child: Text(
               item.name,
