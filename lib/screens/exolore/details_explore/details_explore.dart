@@ -1,11 +1,14 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:nectar/models/beverages.dart';
+import 'package:nectar/models/egg.dart';
 import 'package:nectar/screens/home_screen/widgets/product_item.dart';
 
 class DetailExplore extends StatelessWidget {
   final dynamic items;
-  const DetailExplore({Key? key, this.items}) : super(key: key);
+  final bool eggs;
+  const DetailExplore({Key? key, this.items, required this.eggs})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,13 +52,17 @@ class DetailExplore extends StatelessWidget {
         ],
       ),
       body: GridView.builder(
-        itemCount: AllBeverages().allBeverages.length,
+        itemCount: eggs
+            ? AllEggs().allEggs.length
+            : AllBeverages().allBeverages.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
         ),
         itemBuilder: (BuildContext context, int index) {
           return ProductItem(
-            item: AllBeverages().allBeverages[index],
+            item: eggs
+                ? AllEggs().allEggs[index]
+                : AllBeverages().allBeverages[index],
           );
         },
       ),

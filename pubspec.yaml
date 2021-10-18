@@ -64,41 +64,56 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/logo.png
-    - assets/images/8140 1.png
-    - assets/images/Mask Group.png
-    - assets/images/Rectangle 17.png
-    - assets/images/illustration.png
-    - assets/images/Mask Group2.png
-    - assets/images/carousel image.jpg
-    - assets/images/carousel image 2.jpg
-    - assets/images/carousel image 3.jpg
-    - assets/images/fruits/Bell Pepper Red.png
-    - assets/images/fruits/Organic Bananas.png
-    - assets/images/fruits/Red Apple.png
-    - assets/images/BestSelling/Ginder.png
-    - assets/images/Beverages/Spritte can.png
-    - assets/images/BestSelling/Bell Pepper Red.png
-    - assets/images/groceries/Pulses.png
-    - assets/images/groceries/Rice.png
-    - assets/images/groceries/Beef Bone.png
-    - assets/images/groceries/Broiler Chicken.png
-    - assets/images/explore/pngfuel 6.png
-    - assets/images/explore/pngfuel 6 (1).png
-    - assets/images/explore/pngfuel 6 (2).png
-    - assets/images/explore/pngfuel 8.png
-    - assets/images/explore/pngfuel 9.png
-    - assets/images/explore/pngfuel.png
-    - assets/images/Beverages/Diet Coke.png
-    - assets/images/Beverages/Spritte Can.png
-    - assets/images/Beverages/Apple & Grape Juice.png
-    - assets/images/Beverages/Orenge Juice.png
-    - assets/images/Beverages/Coca Cola Can.png
-    - assets/images/Beverages/Pepsi Can.png
-    - assets/icons/carotte_color.png
-    - assets/icons/carotte.png
-    - assets/icons/google.png
-    - assets/icons/fb.png
-    - assets/icons/Exclude.png
+    - assets/icons/
+    - assets/images/
+    - assets/images/BestSelling/
+    - assets/images/Beverages/
+    - assets/images/Eggs/
+    - assets/images/explore/
+    - assets/images/fruits/
+    - assets/images/groceries/
+    # - assets/images/8140 1.png
+    # - assets/images/Mask Group.png
+    # - assets/images/Rectangle 17.png
+    # - assets/images/illustration.png
+    # - assets/images/Mask Group2.png
+    # - assets/images/carousel image.jpg
+    # - assets/images/carousel image 2.jpg
+    # - assets/images/carousel image 3.jpg
+    # - assets/images/fruits/Bell Pepper Red.png
+    # - assets/images/fruits/Organic Bananas.png
+    # - assets/images/fruits/Red Apple.png
+    # - assets/images/BestSelling/Ginder.png
+    # - assets/images/Beverages/Spritte can.png
+    # - assets/images/BestSelling/Bell Pepper Red.png
+    # - assets/images/BestSelling/Sprite Can.png
+    # - assets/images/groceries/Pulses.png
+    # - assets/images/groceries/Rice.png
+    # - assets/images/groceries/Beef Bone.png
+    # - assets/images/groceries/Broiler Chicken.png
+    # - assets/images/explore/pngfuel 6.png
+    # - assets/images/explore/pngfuel 6 (1).png
+    # - assets/images/explore/pngfuel 6 (2).png
+    # - assets/images/explore/pngfuel 8.png
+    # - assets/images/explore/pngfuel 9.png
+    # - assets/images/explore/pngfuel.png
+    # - assets/images/Beverages/Diet Coke.png
+    # - assets/images/Beverages/Spritte Can.png
+    # - assets/images/Beverages/Apple & Grape Juice.png
+    # - assets/images/Beverages/Orenge Juice.png
+    # - assets/images/Beverages/Coca Cola Can.png
+    # - assets/images/Beverages/Pepsi Can.png
+    # - assets/images/Eggs/Egg Noodles 2.png
+    # - assets/images/Eggs/Egg Noodles.png
+    # - assets/images/Eggs/Egg Chicken Red.png
+    # - assets/images/Eggs/Egg Chicken White.png
+    # - assets/images/Eggs/Egg Pasta.png
+    # - assets/images/Eggs/Mayonnais Eggless.png
+    # - assets/icons/carotte_color.png
+    # - assets/icons/carotte.png
+    # - assets/icons/google.png
+    # - assets/icons/fb.png
+    # - assets/icons/Exclude.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

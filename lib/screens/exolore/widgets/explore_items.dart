@@ -11,7 +11,8 @@ class ExploreDetails extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(
           MaterialPageRoute(builder: (conntext) {
-            return DetailExplore(items: item);
+            return DetailExplore(
+                items: item, eggs: item.name == 'Dairy & Eggs' ? true : false);
           }),
         );
       },
