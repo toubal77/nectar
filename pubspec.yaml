@@ -76,7 +76,7 @@ flutter:
     - assets/images/fruits/Organic Bananas.png
     - assets/images/fruits/Red Apple.png
     - assets/images/BestSelling/Ginder.png
-    - assets/images/BestSelling/Sprite Can.png
+    - assets/images/Beverages/Spritte can.png
     - assets/images/BestSelling/Bell Pepper Red.png
     - assets/images/groceries/Pulses.png
     - assets/images/groceries/Rice.png
@@ -88,6 +88,12 @@ flutter:
     - assets/images/explore/pngfuel 8.png
     - assets/images/explore/pngfuel 9.png
     - assets/images/explore/pngfuel.png
+    - assets/images/Beverages/Diet Coke.png
+    - assets/images/Beverages/Spritte Can.png
+    - assets/images/Beverages/Apple & Grape Juice.png
+    - assets/images/Beverages/Orenge Juice.png
+    - assets/images/Beverages/Coca Cola Can.png
+    - assets/images/Beverages/Pepsi Can.png
     - assets/icons/carotte_color.png
     - assets/icons/carotte.png
     - assets/icons/google.png
