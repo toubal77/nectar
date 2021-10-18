@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nectar/models/explore.dart';
-import 'package:nectar/screens/exolore/widgets/explore_details.dart';
+import 'package:nectar/screens/exolore/widgets/explore_items.dart';
 import 'package:nectar/screens/home_screen/widgets/search_home_screen.dart';
 
 class ExploreScreen extends StatelessWidget {
