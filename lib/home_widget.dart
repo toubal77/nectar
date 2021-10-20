@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nectar/screens/cart_screen/cart_screen.dart';
 import 'package:nectar/screens/exolore/explore_screen.dart';
 import 'package:nectar/screens/home_screen/home_screen.dart';
 
@@ -17,7 +18,7 @@ class _HomeWidgetState extends State<HomeWidget> {
     List<Widget> widgetsOptions = [
       HomeScreen(),
       ExploreScreen(),
-      HomeScreen(),
+      CartScreen(),
       HomeScreen(),
       HomeScreen(),
     ];
