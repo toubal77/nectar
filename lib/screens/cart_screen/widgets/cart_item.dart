@@ -51,8 +51,7 @@ class _CartItemState extends State<CartItem> {
                       width: 183.02.w,
                       height: 18.h,
                       child: Text(
-                        widget.item.name +
-                            'fdohi reoh oreh reoh rohei  rohze rhoei hor',
+                        widget.item.name,
                         style: TextStyle(
                           color: Color(0xff181725),
                           letterSpacing: 0.1,

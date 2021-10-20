@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nectar/screens/cart_screen/cart_screen.dart';
 import 'package:nectar/screens/exolore/explore_screen.dart';
+import 'package:nectar/screens/favorite_screen/favorite_screen.dart';
 import 'package:nectar/screens/home_screen/home_screen.dart';
 
 class HomeWidget extends StatefulWidget {
@@ -19,7 +20,7 @@ class _HomeWidgetState extends State<HomeWidget> {
       HomeScreen(),
       ExploreScreen(),
       CartScreen(),
-      HomeScreen(),
+      FavouriteScreen(),
       HomeScreen(),
     ];
     void onTapBottomNavigation(index) {
